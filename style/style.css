@@ -56,10 +56,10 @@ body, html {
 
 @media (max-width: 768px) {
   #Slide-Anh {
-    top: calc(55%);
+    top: calc(45%);
   }
-  #bear{
-    width: 90px;
+  .Anh{
+    max-width: 15%;
   }
 }
 
@@ -78,3 +78,4 @@ body, html {
   opacity: 1;
   transform: scale(1);
 }
+
