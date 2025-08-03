@@ -56,7 +56,7 @@ body, html {
 
 @media (max-width: 768px) {
   #Slide-Anh {
-    top: calc(10% + 160px);
+    top: calc(55%);
   }
   #bear{
     width: 90px;
@@ -66,7 +66,7 @@ body, html {
 .Anh {
   max-width: 20%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 10%;
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   transform: scale(0.9);
