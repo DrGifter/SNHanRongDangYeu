@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+#canvas {
+  display: block;
+}
+
+#bear {
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
+  width: 110px;
+  z-index: 10;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+#bear:hover{
+  width: 112px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#rotateNotice .overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 0, 30, 0.95);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+}
+
+#Slide-Anh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa ảnh */
+  position: absolute;
+  top: calc(35% + 160px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  #Slide-Anh {
+    top: calc(10% + 160px);
+  }
+  #bear{
+    width: 90px;
+  }
+}
+
+.Anh {
+  max-width: 20%;
+  height: auto;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: scale(0.9);
+  pointer-events: none;
+  position: relative;
+}
+
+.Anh.show {
+  opacity: 1;
+  transform: scale(1);
+}
