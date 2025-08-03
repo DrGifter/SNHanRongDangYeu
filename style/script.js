@@ -34,9 +34,9 @@ const fullText4 = ["Nhưng vẫn muốn nhớ","Và quan tâm hoài"];
 const fullText5 = ["Và mày là một trong số đó"];
 const fullText6 = ["Cảm ơn vì đã cho tao","Cảm giác muốn quan tâm tới","Một người nhiều như vậy"];
 const fullText7 = ["Happy Birthday","Hân Rồng Đáng Yêu"];
-// const allTexts = [fullText1, fullText2, fullText3, fullText4, fullText5, fullText6, fullText7];
+const allTexts = [fullText1, fullText2, fullText3, fullText4, fullText5, fullText6, fullText7];
 // const fullText1 = ["M", "I"];
-const allTexts = [fullText7]; 
+// const allTexts = [fullText7]; 
 
 const fallingIcons = [];
 const iconList = ["💖", "🌟", "💎", "🌸", "✨", "🍀", "🫧"];
@@ -323,4 +323,5 @@ canvas.addEventListener("touchstart", e => {
 
 setInterval(shootDot, 30);
 // setInterval(createFallingIcon, 1000);
+
 animate();
